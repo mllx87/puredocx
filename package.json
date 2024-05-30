@@ -1,8 +1,30 @@
 {
   "name": "puredocx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate docx, pptx, and xlsx from templates (Word, Powerpoint and Excel documents), from Node.js, the Browser.",
   "main": "index.js",
+  "keywords": [
+    "docx",
+    "pptx",
+    "xlsx",
+    "templates",
+    "template",
+    "templater",
+    "templating",
+    "report",
+    "generation",
+    "generate",
+    "generator",
+    "microsoft office",
+    "microsoft word",
+    "microsoft powerpoint",
+    "microsoft excel",
+    "create",
+    "replace",
+    "make",
+    "Office Open XML",
+    "creator"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
