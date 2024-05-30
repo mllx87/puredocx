@@ -28,6 +28,9 @@ Multiple examples are provided in our example repository https://github.com/mllx
 Contact us if you need any specific examples.
 
 ## Installation
+
+[Puredocx NPM Home](https://www.npmjs.com/package/puredocx)
+
 With modules:
 ~~~
 npm install --save puredocx
