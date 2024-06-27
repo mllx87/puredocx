@@ -3,10 +3,10 @@
 [![Download count](https://img.shields.io/npm/dm/puredocx.svg?style=flat)](https://www.npmjs.org/package/puredocx) 
 [![Current tag](https://img.shields.io/npm/v/puredocx.svg?style=flat)](https://www.npmjs.org/package/puredocx)
 
-English | [简体中文](https://github.com/mllx87/puredocx/blob/master/README-zh.md)
+[English](https://github.com/mllx87/puredocx/blob/master/README.md) | 简体中文
 
-[PureDocx](https://puredocx.com) is a library that generates docx/xlsx/pptx documents from docx/xlsx/pptx templates. 
-It can replace {placeholders} with data, and also supports loops, conditions, adding or replacing images, charts, watermarks, etc.
+[PureDocx](https://puredocx.cn)是一个从docx/xlsx/pptx模板生成docx/xlsx/pptx文档的库。 
+它可以用数据替换{placeholders}，还支持循环、条件、添加或替换图像、图表、水印等。
 
 ## Word Examples ##
 - [Simple Text Replacing](https://github.com/mllx87/puredocx-examples/tree/master/word/simple) Replace a {placeholder} by a value
@@ -24,9 +24,9 @@ It can replace {placeholders} with data, and also supports loops, conditions, ad
 - [Add image](https://github.com/mllx87/puredocx-examples/tree/master/powerpoint/image-create)    This tag should use: {%image}
 - [Add chart](https://github.com/mllx87/puredocx-examples/tree/master/powerpoint/chart-line) This tag should use: {$chart}
 
-Multiple examples are provided in our example repository https://github.com/mllx87/puredocx-examples.
+更多示例 https://github.com/mllx87/puredocx-examples.
 
-Contact us if you need any specific examples.
+如果您需要任何具体示例，请联系我们。
 
 ## Installation
 
@@ -44,7 +44,7 @@ First, download the input.docx file and place it in the same folder as your Java
 const Puredocx = require("puredocx");
 
 // Make sure to load your metered License API key prior to using the library.
-// If you need a key, you can sign up and create a free one at https://puredocx.com
+// If you need a key, you can sign up and create a free one at https://puredocx.cn
 var puredocx = new Puredocx()
 
 puredocx.setMeteredKey(process.env.PUREDOCX_LICENSE_API_KEY)
@@ -59,14 +59,14 @@ var substitutions = {
 puredocx.render("input.docx",substitutions,"output.docx")
 ```
 
-## License key
-This software package (puredocx) is a commercial product and requires a license code to operate.
+## 注册码
+该软件包（puredocx）是商业产品，需要许可证代码才能运行。
 
-To Get a Metered License API Key in for free in the Free Tier, sign up on https://puredocx.com
+要在免费套餐中免费获取计量许可证 API 密钥，请注册 https://puredocx.cn
 
-## Support and consulting ##
+## 支持和咨询 ##
 
-Please email us at support@milyleshare.com for any queries.
+如有任何疑问，请发送电子邮件至 support@milyleshare.com。
 
-If you have any specific tasks that need to be done, we offer consulting in certain cases.
-Please contact us with a brief summary of what you need.
+如果您有任何需要完成的特定任务，我们会在某些情况下提供咨询。
+请联系我们并简要说明您的需求。
