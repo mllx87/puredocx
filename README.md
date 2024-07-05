@@ -28,7 +28,7 @@ npm install --save @mllx87/puredocx
 ~~~
 
 ## Usage
-First, download the [simple.docx](https://github.com/mllx87/puredocx/blob/master/tests/simple.docx) file and place it in the same folder as your JavaScript file.
+First, download the [input.docx](https://github.com/mllx87/puredocx/blob/master/tests/input.docx) file and place it in the same folder as your JavaScript file.
 
 ``` js
 const Puredocx = require("@mllx87/puredocx");

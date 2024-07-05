@@ -19,4 +19,4 @@ var substitutions = {
 };
 
 
-puredocx.render("simple.docx", substitutions, "output.docx")
+puredocx.render("input.docx", substitutions, "output.docx")
