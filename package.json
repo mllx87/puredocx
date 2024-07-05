@@ -1,17 +1,21 @@
 {
   "name": "@mllx87/puredocx",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Generate docx, pptx, and xlsx from templates (Word, Powerpoint and Excel documents), from Node.js, the Browser.",
   "scripts": {
     "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Timmy <support@milyleshare.com> (https://puredocx.com)",
+  "author": {
+    "name": "Timmy",
+    "email": "support@milyleshare.com",
+    "url": "https://puredocx.com"
+  },
   "main": "lib/index.js",
   "homepage": "https://github.com/mllx87/puredocx#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mllx87/puredocx.git"
+    "url": "https://github.com/mllx87/puredocx.git"
   },
   "keywords": [
     "docx",
