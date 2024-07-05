@@ -1,3 +1,5 @@
 src/*
 !src/docx-module
+!src/image-module
+src/image-module/bus
 node_modules

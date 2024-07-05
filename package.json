@@ -3,11 +3,11 @@
   "version": "2.0.1",
   "description": "Generate docx, pptx, and xlsx from templates (Word, Powerpoint and Excel documents), from Node.js, the Browser.",
   "scripts": {
-    "build": "gulp js",
+    "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Timmy <support@milyleshare.com> (https://puredocx.com)",
-  "main": "index.js",
+  "main": "lib/index.js",
   "homepage": "https://github.com/mllx87/puredocx#readme",
   "repository": {
     "type": "git",
@@ -40,9 +40,11 @@
   },
   "license": "MIT",
   "files": [
-    "index.js",
     "lib",
-    "package.json"
+    "package.json",
+    "README.md",
+    "README-zh.md",
+    "SECURITY.md"
   ],
   "devDependencies": {
     "gulp": "^5.0.0",
@@ -52,6 +54,7 @@
   },
   "dependencies": {
     "@xmldom/xmldom": "^0.8.10",
+    "image-size": "^1.1.1",
     "pizzip": "^3.1.7"
   },
   "directories": {
