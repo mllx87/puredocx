@@ -50,12 +50,7 @@ Images,Assuming your docx or pptx template contains only the text {%image}
 ``` js
 const Puredocx = require("@mllx87/puredocx");
 
-var puredocx = new Puredocx({
-    "imageOptions": {
-        imageRootPath: "",
-        getSize() { return [350, 300] }
-    }
-})
+var puredocx = new Puredocx()
 
 var substitutions = {
     "title":"hello",
@@ -91,12 +86,12 @@ Supported image format in given data :
 - URL : https://www.puredocx.com/static/img/company.png
 
 You can pass imageRootPath option for setting the root folder for your images.  
-
+``` js
     var puredocx = new Puredocx({
     "imageOptions": {
         imageRootPath: "/path/to/your/image/dir",
         getSize() { return [350, 300] }
     }
 })
-
+```
 For more options see:[PureDocx](https://puredocx.com)
