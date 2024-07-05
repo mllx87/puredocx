@@ -1,5 +1,7 @@
 src/*
 !src/docx-module
 !src/image-module
+!src/common
+!/src/index.js
 src/image-module/bus
 node_modules
