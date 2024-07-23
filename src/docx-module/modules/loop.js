@@ -208,6 +208,7 @@ var LoopModule = /*#__PURE__*/function () {
       if (filetypes.main.indexOf(contentType) !== -1) {
         this.sects = getSectPr(parsed);
       }
+      return parsed;
     }
   }, {
     key: "matchers",

@@ -234,6 +234,7 @@ function getAllDelimiterIndexes(fullText, delimiters) {
     end = delimiters.end;
   var offset = -1;
   var insideTag = false;
+
   while (true) {
     var startOffset = fullText.indexOf(start, offset + 1);
     var endOffset = fullText.indexOf(end, offset + 1);
@@ -291,6 +292,7 @@ function getAllDelimiterIndexes(fullText, delimiters) {
   }
 }
 function parseDelimiters(innerContentParts, delimiters, syntaxOptions) {
+
   var full = innerContentParts.map(function (p) {
     return p.value;
   }).join("");

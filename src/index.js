@@ -22,7 +22,7 @@ class Puredocx {
             _this.options.modules.push(module);
           });
 
-        console.log("options=>", this.options);
+       // console.log("options=>", this.options);
     }
     version() {
         return this._version;

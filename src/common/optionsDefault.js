@@ -5,9 +5,8 @@ module.exports = {
     modules: [],
     imageOptions: {
         imageRootPath: "",
-        centered: true,
         getImage(tagValue, tagName, meta) {
-            console.log({ tagValue, tagName, meta });
+            // console.log({ tagValue, tagName, meta });
             if (typeof tagValue === "string") {
                 var imagePath = this && this.imageRootPath ? `${this.imageRootPath}/${tagValue}` : tagValue;
                 if (fs.existsSync(imagePath)) {
@@ -34,18 +33,39 @@ module.exports = {
 
 
         },
-        getSize(image, tagValue, tagName, part) {
+        getSize(img, tagValue, tagName, part) {
+            //console.log({ tagValue, tagName, part });
+            const sizeObj = sizeOf(img);
+            const maxWidth = part.containerWidth;
+            const maxHeight = part.containerHeight || part.containerWidth;
 
-            console.log({ tagValue, tagName, part });
+            const widthRatio = sizeObj.width / maxWidth;
+            const heightRatio = sizeObj.height / maxHeight;
+            if (widthRatio < 1 && heightRatio < 1) {
+                /*
+                 * Do not scale up images that are
+                 * smaller than maxWidth,maxHeight
+                 */
+                return [sizeObj.width, sizeObj.height];
+            }
+            let finalWidth, finalHeight;
+            if (widthRatio > heightRatio) {
+                /*
+                 * Width will be equal to maxWidth
+                 * because width is the most "limiting"
+                 */
+                finalWidth = maxWidth;
+                finalHeight = sizeObj.height / widthRatio;
+            } else {
+                /*
+                 * Height will be equal to maxHeight
+                 * because height is the most "limiting"
+                 */
+                finalHeight = maxHeight;
+                finalWidth = sizeObj.width / heightRatio;
+            }
 
-            // if (part.module === "image-module") {
-            //     return [part.width, part.height];
-            // }
-
-            // // return usual value, using image-size or other method.
-            //const buffer = Buffer.from(image, "binary");
-            const sizeObj = sizeOf(image);
-            return [sizeObj.width, sizeObj.height];
+            return [Math.round(finalWidth), Math.round(finalHeight)];
         },
     }
 }

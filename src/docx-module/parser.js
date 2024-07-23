@@ -117,9 +117,10 @@ function moduleParse(placeHolderContent, options) {
 var parser = {
   preparse: function preparse(parsed, modules, options) {
     function preparse(parsed, options) {
-      return modules.forEach(function (module) {
-        module.preparse(parsed, options);
+       modules.forEach(function (module) {
+        parsed = module.preparse(parsed, options);
       });
+      return parsed;
     }
     return {
       preparsed: preparse(parsed, options)
@@ -141,6 +142,7 @@ var parser = {
               modules: modules
             }));
           };
+          
           parsed.push(options.parse(wordToUtf8(placeHolderContent)));
           Array.prototype.push.apply(parsed, tailParts);
           tailParts = [];
@@ -163,6 +165,7 @@ var parser = {
         tailParts.push(token);
         return parsed;
       }
+    
       placeHolderContent += token.value;
       return parsed;
     }, []);

@@ -126,7 +126,10 @@ module.exports = /*#__PURE__*/function () {
         }
       });
       var options = this.getOptions();
-      Parser.preparse(this.lexed, this.modules, options);
+      var _Parser$preparse =  Parser.preparse(this.lexed, this.modules, options);
+      
+      this.lexed = _Parser$preparse.preparsed;
+
     }
   }, {
     key: "parse",
@@ -137,6 +140,8 @@ module.exports = /*#__PURE__*/function () {
         }
       });
       var options = this.getOptions();
+
+  
       this.parsed = Parser.parse(this.lexed, this.modules, options);
       this.setModules({
         inspect: {
