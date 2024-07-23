@@ -40,7 +40,7 @@ gulp.task('common', function () {
 })
 
 
-gulp.task('default', gulp.series('clean', gulp.parallel('docx', 'image', 'index', 'common')));
+gulp.task('build', gulp.series('clean', gulp.parallel('docx', 'image', 'index', 'common')));
 
 
 
