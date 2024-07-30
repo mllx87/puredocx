@@ -20,12 +20,12 @@ Contact us if you need any specific examples.
 
 ## Modules
 The following functions can be added through the paid module [puredocx-pro-module](https://puredocx.com) :
-- Image module to add an image and replace an existing image with the syntax: {%image};
-- Html Module to insert formatted text in a docx document with the syntax {~html};
-- XLSX Module to be able to do templating on Excel files (xlsx extension), also with loops and conditions;
-- Chart Module to add a chart by using data from the JSON object that you give with the syntax {$chart};
-- Watermark module to replace a given Watermark with the syntax: {watermark};
-- QrCode Module to add a qrcode with the syntax {#qrcode};
+- Image function to add an image and replace an existing image with the syntax: {%image};
+- Html function to insert formatted text in a docx document with the syntax {~html};
+- XLSX function to be able to do templating on Excel files (xlsx extension), also with loops and conditions;
+- Chart function to add a chart by using data from the JSON object that you give with the syntax {$chart};
+- Watermark function to replace a given Watermark with the syntax: {watermark};
+- QrCode function to add a qrcode with the syntax {&qrcode};
 
 ## Installation
 

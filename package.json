@@ -1,6 +1,6 @@
 {
   "name": "@mllx87/puredocx",
-  "version": "2.1.2",
+  "version": "2.1.4",
   "description": "Generate docx, pptx, and xlsx from templates (Word, Powerpoint and Excel documents), from Node.js, the Browser.",
   "scripts": {
     "build": "gulp build",
