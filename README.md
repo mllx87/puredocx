@@ -18,6 +18,15 @@ Multiple examples are provided in our example repository https://github.com/mllx
 
 Contact us if you need any specific examples.
 
+## Modules
+The following functions can be added through the paid module [puredocx-pro-module](https://puredocx.com) :
+- Image module to add an image and replace an existing image with the syntax: {%image};
+- Html Module to insert formatted text in a docx document with the syntax {~html};
+- XLSX Module to be able to do templating on Excel files (xlsx extension), also with loops and conditions;
+- Chart Module to add a chart by using data from the JSON object that you give with the syntax {$chart};
+- Watermark module to replace a given Watermark with the syntax: {watermark};
+- QrCode Module to add a qrcode with the syntax {#qrcode};
+
 ## Installation
 
 [Puredocx NPM Home](https://www.npmjs.com/package/@mllx87/puredocx)

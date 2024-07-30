@@ -407,7 +407,7 @@ var Docxtemplater = /*#__PURE__*/function () {
     }
   }, {
     key: "render",
-    value: async function render(data) {
+    value: function render(data) {
       var _this7 = this;
       if (this.rendered) {
         throwRenderTwice();
