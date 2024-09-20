@@ -51,7 +51,7 @@ var substitutions = {
     "company":"mllx"
 };
 
-puredocx.render("input.docx",substitutions,"output.docx")
+puredocx.renderAsync("input.docx",substitutions,"output.docx")
 ```
 
 Images,Assuming your docx or pptx template contains only the text {%image}
@@ -69,7 +69,7 @@ var substitutions = {
     "image": "99e36.jpeg"
 };
 
-puredocx.render("input.docx",substitutions,"output.docx")
+puredocx.renderAsync("input.docx",substitutions,"output.docx")
 ```
 
 Some notes regarding templates:

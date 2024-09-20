@@ -38,7 +38,11 @@ function setOptions(options) {
     return  deepExtend({}, defaultOptions, options)
 }
 
+function getOptions(){
+    return defaultOptions
+}
 // 导出变量
 module.exports = {
-    setOptions
+    setOptions,
+    getOptions
 };

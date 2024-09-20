@@ -47,6 +47,6 @@ var substitutions = {
     "company":"mllx"
 };
 
-puredocx.render("input.docx",substitutions,"output.docx")
+puredocx.renderAsync("input.docx",substitutions,"output.docx")
 ```
 
